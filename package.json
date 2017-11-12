@@ -1,7 +1,7 @@
 {
   "name": "write-file-tree",
   "description": "write an object to nested file tree, with one file for each value",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Renée Kooi <renee@kooi.me>",
   "bugs": {
     "url": "https://github.com/goto-bus-stop/write-file-tree/issues"
