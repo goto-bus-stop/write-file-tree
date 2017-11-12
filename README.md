@@ -62,6 +62,10 @@ writeFileTree('test/fixture', {
 
 The same, but sync.
 
+## See Also
+
+ * [read-file-tree](https://github.com/goto-bus-stop/read-file-tree) - recursively read contents of all files in a directory
+
 ## License
 
 [Apache-2.0](LICENSE.md)
