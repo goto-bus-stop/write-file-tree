@@ -1,0 +1,38 @@
+{
+  "name": "write-file-tree",
+  "description": "write an object to nested file tree, with one file for each value",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/write-file-tree/issues"
+  },
+  "dependencies": {
+    "is-plain-object": "^2.0.4",
+    "map-limit": "0.0.1"
+  },
+  "devDependencies": {
+    "read-file-tree": "^1.1.0",
+    "standard": "^10.0.3",
+    "tape": "^4.8.0",
+    "tempy": "^0.2.1"
+  },
+  "homepage": "https://github.com/goto-bus-stop/write-file-tree",
+  "keywords": [
+    "directory",
+    "fs"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goto-bus-stop/write-file-tree.git"
+  },
+  "scripts": {
+    "test": "standard && tape test/*.js"
+  },
+  "standard": {
+    "ignore": [
+      "test/fixture"
+    ]
+  }
+}
