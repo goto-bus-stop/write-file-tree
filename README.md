@@ -65,6 +65,13 @@ The same, but sync.
 ## See Also
 
  * [read-file-tree](https://github.com/goto-bus-stop/read-file-tree) - recursively read contents of all files in a directory
+ * [flat](https://github.com/hughsk/flat) - flatten and unflatten objects—you can use this to write a file tree using an object containing paths:
+   ```js
+   writeFileTree('./dest', flat.unflatten({
+    'a.txt': '',
+    'some/dir/name/b.txt': ''
+   }, { delimiter: '/' }))
+   ```
 
 ## License
 
