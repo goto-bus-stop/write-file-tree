@@ -10,13 +10,13 @@ module.exports = function writeFileTree (basedir, tree, opts, cb) {
     opts = {}
   }
 
-  assert.equal(typeof basedir, 'string', 'write-file-tree: basedir must be string')
-  assert.equal(typeof tree, 'object', 'write-file-tree: tree must be object')
-  assert.equal(typeof opts, 'object', 'write-file-tree: opts must be object')
-  assert.equal(typeof cb, 'function', 'write-file-tree: callback must be function')
+  assert.strictEqual(typeof basedir, 'string', 'write-file-tree: basedir must be string')
+  assert.strictEqual(typeof tree, 'object', 'write-file-tree: tree must be object')
+  assert.strictEqual(typeof opts, 'object', 'write-file-tree: opts must be object')
+  assert.strictEqual(typeof cb, 'function', 'write-file-tree: callback must be function')
 
   var limit = opts.limit != null ? opts.limit : 5
-  assert.equal(typeof limit, 'number', 'write-file-tree: opts.limit must be a number')
+  assert.strictEqual(typeof limit, 'number', 'write-file-tree: opts.limit must be a number')
 
   write(basedir, tree, cb)
 
@@ -52,9 +52,9 @@ module.exports = function writeFileTree (basedir, tree, opts, cb) {
 module.exports.sync = function writeFileTreeSync (basedir, tree, opts) {
   opts = opts || {}
 
-  assert.equal(typeof basedir, 'string', 'write-file-tree: basedir must be string')
-  assert.equal(typeof tree, 'object', 'write-file-tree: tree must be object')
-  assert.equal(typeof opts, 'object', 'write-file-tree: opts must be object')
+  assert.strictEqual(typeof basedir, 'string', 'write-file-tree: basedir must be string')
+  assert.strictEqual(typeof tree, 'object', 'write-file-tree: tree must be object')
+  assert.strictEqual(typeof opts, 'object', 'write-file-tree: opts must be object')
 
   return writeSync(basedir, tree)
 

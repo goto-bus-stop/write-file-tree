@@ -7,13 +7,13 @@
     "url": "https://github.com/goto-bus-stop/write-file-tree/issues"
   },
   "dependencies": {
-    "is-plain-object": "^2.0.4",
+    "is-plain-object": "^3.0.0",
     "map-limit": "0.0.1"
   },
   "devDependencies": {
-    "read-file-tree": "^1.1.0",
-    "standard": "^10.0.3",
-    "tape": "^4.8.0",
+    "read-file-tree": "^1.1.1",
+    "standard": "^13.0.0",
+    "tape": "^4.11.0",
     "tempy": "^0.2.1"
   },
   "homepage": "https://github.com/goto-bus-stop/write-file-tree",
