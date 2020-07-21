@@ -7,7 +7,7 @@
     "url": "https://github.com/goto-bus-stop/write-file-tree/issues"
   },
   "dependencies": {
-    "is-plain-object": "^3.0.0",
+    "is-plain-object": "^4.0.0",
     "map-limit": "0.0.1"
   },
   "devDependencies": {
