@@ -2,7 +2,13 @@ var assert = require('assert')
 var path = require('path')
 var fs = require('fs')
 var mapLimit = require('map-limit')
-var isPlainObject = require('is-plain-object')
+function isPlainObject (value) {
+  if (typeof value === 'object' && value !== null) {
+    var proto = Object.getPrototypeOf(value)
+    return proto === Object.prototype || proto === null
+  }
+  return false
+}
 
 module.exports = function writeFileTree (basedir, tree, opts, cb) {
   if (typeof opts === 'function') {
